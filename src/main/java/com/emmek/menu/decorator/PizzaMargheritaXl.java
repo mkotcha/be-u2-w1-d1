@@ -4,6 +4,7 @@ public class PizzaMargheritaXl extends Consumation {
     public PizzaMargheritaXl() {
         productName = "Pizza Margherita XL";
         ingredients = "pomodoro, mozzarella";
+        isXl = true;
     }
 
     @Override

@@ -4,7 +4,7 @@ public class ExtraProsciuttoDecorator extends ExtraAddictionDecorator {
 
     public ExtraProsciuttoDecorator(Consumation consumation) {
         this.consumation = consumation;
-        isXl = consumation instanceof PizzaMargheritaXl || consumation.isXl;
+        isXl = consumation.isXl;
     }
 
     @Override
