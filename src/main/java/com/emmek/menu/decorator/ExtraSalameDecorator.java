@@ -4,12 +4,15 @@ public class ExtraSalameDecorator extends ExtraAddictionDecorator {
 
     public ExtraSalameDecorator(Consumation consumation) {
         this.consumation = consumation;
-
+        isXl = consumation instanceof PizzaMargheritaXl || consumation.isXl;
     }
 
     @Override
     public String getProductName() {
-        return consumation.getProductName();
+        if (isXl) {
+            return "Pizza XL";
+        }
+        return "Salami Pizza";
     }
 
     @Override

@@ -24,10 +24,10 @@ public class BeansConfiguration {
 
         Consumation pizza = new PizzaMargherita();
 
-        Consumation pizzaSalami = new PizzaMargherita("Salami Pizza");
+        Consumation pizzaSalami = new PizzaMargherita();
         pizzaSalami = new ExtraSalameDecorator(pizzaSalami);
 
-        Consumation pizzaHawaii = new PizzaMargherita("Hawaiian Pizza");
+        Consumation pizzaHawaii = new PizzaMargherita();
         pizzaHawaii = new ExtraAnanasDecorator(pizzaHawaii);
         pizzaHawaii = new ExtraProsciuttoDecorator(pizzaHawaii);
 //        pizzaHawaii = new ExtraProsciuttoDecorator(pizzaHawaii);

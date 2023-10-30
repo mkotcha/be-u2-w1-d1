@@ -8,6 +8,7 @@ public abstract class Consumation {
     String productName = "";
     String ingredients = "";
     double price;
+    boolean isXl;
 
     @Override
     public String toString() {
