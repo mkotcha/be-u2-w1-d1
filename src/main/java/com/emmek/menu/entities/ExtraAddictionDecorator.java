@@ -11,7 +11,6 @@ public abstract class ExtraAddictionDecorator extends Consumation {
 
     public abstract String getSingleIngredient();
 
-    public void singlePrint() {
-        System.out.println(getSingleIngredient() + " - 0,50€\n");
-    }
+    public abstract void singlePrint();
+    
 }

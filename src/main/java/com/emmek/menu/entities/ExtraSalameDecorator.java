@@ -22,6 +22,11 @@ public class ExtraSalameDecorator extends ExtraAddictionDecorator {
     }
 
     public double getPrice() {
-        return consumation.getPrice() + 0.5;
+        return consumation.getPrice() + 1.5;
+    }
+
+    @Override
+    public void singlePrint() {
+        System.out.println(getSingleIngredient() + " - 1,50€\n");
     }
 }

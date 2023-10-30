@@ -4,7 +4,6 @@ public class ExtraAnanasDecorator extends ExtraAddictionDecorator {
 
     public ExtraAnanasDecorator(Consumation consumation) {
         this.consumation = consumation;
-
     }
 
     @Override
@@ -23,5 +22,9 @@ public class ExtraAnanasDecorator extends ExtraAddictionDecorator {
 
     public double getPrice() {
         return consumation.getPrice() + 0.5;
+    }
+
+    public void singlePrint() {
+        System.out.println(getSingleIngredient() + " - 0,50€\n");
     }
 }

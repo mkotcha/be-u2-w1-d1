@@ -20,7 +20,12 @@ public class ExtraProsciuttoDecorator extends ExtraAddictionDecorator {
         return "prosciutto";
     }
 
+    @Override
+    public void singlePrint() {
+        System.out.println(getSingleIngredient() + " - 1,00€\n");
+    }
+
     public double getPrice() {
-        return consumation.getPrice() + 0.5;
+        return consumation.getPrice() + 1;
     }
 }

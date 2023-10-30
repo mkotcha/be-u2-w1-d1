@@ -1,28 +1,19 @@
 package com.emmek.menu.entities;
 
+import lombok.Getter;
+
 public abstract class Consumation {
 
+    @Getter
     String productName = "";
+    @Getter
     String ingredients = "";
-
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public String getIngredients() {
-        return ingredients;
-    }
-
-    public abstract double getPrice();
+    @Getter
+    double price;
 
     @Override
     public String toString() {
         return getProductName() + " ( " + getIngredients() + " ) " + " - " + getPrice() + " €\n";
     }
-    
+
 }
