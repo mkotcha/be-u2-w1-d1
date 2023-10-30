@@ -9,4 +9,7 @@ public abstract class ExtraAddictionDecorator extends Consumation {
     @Override
     public abstract String getIngredients();
 
+    public abstract String getSingleIngredient();
+
+
 }

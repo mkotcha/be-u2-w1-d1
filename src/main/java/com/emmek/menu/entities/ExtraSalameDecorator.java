@@ -17,6 +17,10 @@ public class ExtraSalameDecorator extends ExtraAddictionDecorator {
         return consumation.getIngredients() + ", salame";
     }
 
+    public String getSingleIngredient() {
+        return "salame";
+    }
+
     public double getPrice() {
         return consumation.getPrice() + 0.5;
     }

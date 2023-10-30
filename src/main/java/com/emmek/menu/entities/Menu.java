@@ -6,9 +6,9 @@ import java.util.List;
 public class Menu {
     public List<Consumation> pizzas = new ArrayList<>();
     public List<Consumation> beverages = new ArrayList<>();
-    public List<Consumation> toppings = new ArrayList<>();
+    public List<ExtraAddictionDecorator> toppings = new ArrayList<>();
 
-    public Menu(List<Consumation> pizzas, List<Consumation> beverages, List<Consumation> toppings) {
+    public Menu(List<Consumation> pizzas, List<Consumation> beverages, List<ExtraAddictionDecorator> toppings) {
         this.pizzas = pizzas;
         this.beverages = beverages;
         this.toppings = toppings;
@@ -25,5 +25,7 @@ public class Menu {
 
     public void printMenu() {
         pizzas.forEach(System.out::println);
+        toppings.forEach(elm -> System.out.println(elm.getSingleIngredient()));
+        beverages.forEach(System.out::println);
     }
 }

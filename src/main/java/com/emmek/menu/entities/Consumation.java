@@ -5,6 +5,7 @@ public abstract class Consumation {
     String productName = "";
     String ingredients = "";
 
+
     public String getProductName() {
         return productName;
     }
@@ -23,4 +24,5 @@ public abstract class Consumation {
     public String toString() {
         return getProductName() + " ( " + getIngredients() + " ) " + " - " + getPrice() + " €\n";
     }
+    
 }

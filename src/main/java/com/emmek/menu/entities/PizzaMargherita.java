@@ -1,9 +1,15 @@
 package com.emmek.menu.entities;
 
 public class PizzaMargherita extends Consumation {
-    public PizzaMargherita() {
-        productName = "Pizza Margherita";
+
+    public PizzaMargherita(String productName) {
+        this.productName = productName;
         ingredients = "pomodoro, mozzarella";
+    }
+
+    public PizzaMargherita() {
+        productName =
+                ingredients = "pomodoro, mozzarella";
     }
 
     @Override

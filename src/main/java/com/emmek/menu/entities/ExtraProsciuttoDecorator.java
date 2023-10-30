@@ -16,6 +16,10 @@ public class ExtraProsciuttoDecorator extends ExtraAddictionDecorator {
         return consumation.getIngredients() + ", prosciutto";
     }
 
+    public String getSingleIngredient() {
+        return "prosciutto";
+    }
+
     public double getPrice() {
         return consumation.getPrice() + 0.5;
     }

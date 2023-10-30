@@ -17,6 +17,10 @@ public class ExtraAnanasDecorator extends ExtraAddictionDecorator {
         return consumation.getIngredients() + ", ananas";
     }
 
+    public String getSingleIngredient() {
+        return "ananas";
+    }
+
     public double getPrice() {
         return consumation.getPrice() + 0.5;
     }
