@@ -9,12 +9,12 @@ public class ExtraSalameDecorator extends ExtraAddictionDecorator {
 
     @Override
     public String getProductName() {
-        return consumation.getProductName() + " con prosciutto";
+        return consumation.getProductName();
     }
 
     @Override
     public String getIngredients() {
-        return "salame";
+        return consumation.getIngredients() + ", salame";
     }
 
     public double getPrice() {

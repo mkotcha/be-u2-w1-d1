@@ -18,4 +18,9 @@ public abstract class Consumation {
     }
 
     public abstract double getPrice();
+
+    @Override
+    public String toString() {
+        return getProductName() + " ( " + getIngredients() + " ) " + " - " + getPrice() + " €\n";
+    }
 }

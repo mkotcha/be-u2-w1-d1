@@ -22,4 +22,8 @@ public class Menu {
                 " toppings:\n" + toppings +
                 "\n";
     }
+
+    public void printMenu() {
+        pizzas.forEach(System.out::println);
+    }
 }
