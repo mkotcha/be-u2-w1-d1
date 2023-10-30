@@ -5,22 +5,13 @@ import java.util.List;
 
 public class Menu {
     public List<Consumation> pizzas = new ArrayList<>();
-    public List<Consumation> beverages = new ArrayList<>();
+    public List<Drink> drinks = new ArrayList<>();
     public List<ExtraAddictionDecorator> toppings = new ArrayList<>();
 
-    public Menu(List<Consumation> pizzas, List<Consumation> beverages, List<ExtraAddictionDecorator> toppings) {
+    public Menu(List<Consumation> pizzas, List<Drink> drinks, List<ExtraAddictionDecorator> toppings) {
         this.pizzas = pizzas;
-        this.beverages = beverages;
+        this.drinks = drinks;
         this.toppings = toppings;
-    }
-
-    @Override
-    public String toString() {
-        return "\nSpring Pizza Menu:\n" +
-                " pizzas:\n" + pizzas +
-                " beverages:\n" + beverages +
-                " toppings:\n" + toppings +
-                "\n";
     }
 
     public void printMenu() {
@@ -28,9 +19,11 @@ public class Menu {
         System.out.println("\nSpring Beans Pizza Menu:\n");
         System.out.println("\n pizzas:\n");
         pizzas.forEach(System.out::println);
+
         System.out.println("\n toppings:\n");
         toppings.forEach(ExtraAddictionDecorator::singlePrint);
-        System.out.println("\n beverages:\n");
-        beverages.forEach(System.out::println);
+
+        System.out.println("\n drinks:\n");
+        drinks.forEach(System.out::println);
     }
 }

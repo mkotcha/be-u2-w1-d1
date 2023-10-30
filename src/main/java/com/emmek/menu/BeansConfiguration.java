@@ -21,9 +21,12 @@ public class BeansConfiguration {
         Consumation pizzaHawaii = new PizzaMargherita("Hawaiian Pizza");
         pizzaHawaii = new ExtraAnanasDecorator(pizzaHawaii);
         pizzaHawaii = new ExtraProsciuttoDecorator(pizzaHawaii);
+//        pizzaHawaii = new ExtraProsciuttoDecorator(pizzaHawaii);
 
         List<Consumation> pizzas = List.of(pizza, pizzaHawaii, pizzaSalami);
-        List<Consumation> drinks = List.of(new CocaCola(), new Birra(), new Acqua());
+        List<Drink> drinks = List.of(new Drink("Coca Cola", 0.33, 2.5),
+                new Drink("wather", 0.5, 1),
+                new AlcoholicDrink("beer", 0.33, 3, 4.5));
         List<ExtraAddictionDecorator> toppings = List.of(new ExtraSalameDecorator(pizza), new ExtraAnanasDecorator(pizza), new ExtraProsciuttoDecorator(pizza));
 
         return new Menu(pizzas, drinks, toppings);
