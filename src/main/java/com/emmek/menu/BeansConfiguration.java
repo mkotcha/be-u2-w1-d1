@@ -1,6 +1,9 @@
 package com.emmek.menu;
 
-import com.emmek.menu.entities.*;
+import com.emmek.menu.decorator.*;
+import com.emmek.menu.entities.AlcoholicDrink;
+import com.emmek.menu.entities.Drink;
+import com.emmek.menu.entities.Menu;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

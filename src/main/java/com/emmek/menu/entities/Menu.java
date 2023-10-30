@@ -1,5 +1,8 @@
 package com.emmek.menu.entities;
 
+import com.emmek.menu.decorator.Consumation;
+import com.emmek.menu.decorator.ExtraAddictionDecorator;
+
 import java.util.ArrayList;
 import java.util.List;
 

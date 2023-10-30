@@ -1,4 +1,4 @@
-package com.emmek.menu.entities;
+package com.emmek.menu.decorator;
 
 import lombok.Getter;
 

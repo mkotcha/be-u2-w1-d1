@@ -1,4 +1,4 @@
-package com.emmek.menu.entities;
+package com.emmek.menu.decorator;
 
 public abstract class ExtraAddictionDecorator extends Consumation {
     protected Consumation consumation;
@@ -12,5 +12,5 @@ public abstract class ExtraAddictionDecorator extends Consumation {
     public abstract String getSingleIngredient();
 
     public abstract void singlePrint();
-    
+
 }
