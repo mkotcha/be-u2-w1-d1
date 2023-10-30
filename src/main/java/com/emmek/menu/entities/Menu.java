@@ -24,8 +24,13 @@ public class Menu {
     }
 
     public void printMenu() {
+
+        System.out.println("\nSpring Beans Pizza Menu:\n");
+        System.out.println("\n pizzas:\n");
         pizzas.forEach(System.out::println);
-        toppings.forEach(elm -> System.out.println(elm.getSingleIngredient()));
+        System.out.println("\n toppings:\n");
+        toppings.forEach(ExtraAddictionDecorator::singlePrint);
+        System.out.println("\n beverages:\n");
         beverages.forEach(System.out::println);
     }
 }

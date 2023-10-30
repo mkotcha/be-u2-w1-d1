@@ -8,8 +8,8 @@ public class PizzaMargherita extends Consumation {
     }
 
     public PizzaMargherita() {
-        productName =
-                ingredients = "pomodoro, mozzarella";
+        productName = "Pizza Margherita";
+        ingredients = "pomodoro, mozzarella";
     }
 
     @Override
