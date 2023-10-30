@@ -9,12 +9,12 @@ public class ExtraAnanasDecorator extends ExtraAddictionDecorator {
 
     @Override
     public String getProductName() {
-        return consumation.getProductName() + " con prosciutto";
+        return consumation.getProductName();
     }
 
     @Override
     public String getIngredients() {
-        return "prosciutto";
+        return consumation.getIngredients() + ", ananas";
     }
 
     public double getPrice() {

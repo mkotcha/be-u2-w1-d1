@@ -9,6 +9,10 @@ public abstract class Consumation {
         return productName;
     }
 
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
     public String getIngredients() {
         return ingredients;
     }
